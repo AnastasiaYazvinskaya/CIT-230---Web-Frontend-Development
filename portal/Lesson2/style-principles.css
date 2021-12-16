@@ -1,0 +1,81 @@
+#content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Muli";
+}
+
+header, footer {
+    text-align: center;
+    background-color: #36ba8e;
+    border-radius: 7.5px;
+}
+header {
+    font-family: "Sigmar One";
+}
+
+main {
+    margin: -10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 5px 20px 5px;
+    border-radius: 7.5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#first-section {
+    background-color: #fddabd;
+    grid-column: span 4;
+}
+#second-section {
+    background-color: #cd92a4;
+    grid-column: span 4;
+}
+#third-section {
+    background-color: #b9a6bc;
+    grid-column: span 4;
+}
+
+img {
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #242525;
+}
+
+@media only screen and (min-width: 750px) {
+    #first-section {
+        grid-column: span 1;
+    }
+    #second-section {
+        grid-column: span 1;
+    }
+    #third-section {
+        grid-column: span 1;
+    }
+
+    main {
+        margin: -10px -20px 10px 10px ;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+    #first-section {
+        grid-column: span 2;
+    }
+    #second-section {
+        grid-column: span 2;
+    }
+    #third-section {
+        grid-column: span 4;
+    }
+}
